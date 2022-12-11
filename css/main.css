@@ -1,0 +1,39 @@
+/* elements */
+html
+{
+    font-family: sans-serif;
+}
+
+body
+{
+    width: 100%;
+
+    margin: 0px;
+
+    background: rgb(18, 18, 18);
+    color: white;
+}
+
+header
+{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+
+    height: 60px;
+
+    background: red;
+}
+
+/*id*/
+#wrapper
+{
+    width: 85%;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+
+    background: blue;
+}
