@@ -10,7 +10,7 @@ body
 
     margin: 0px;
 
-    background: rgb(18, 18, 18);
+    background: rgb(20, 20, 20);
     color: white;
 }
 
@@ -23,10 +23,29 @@ header
 
     height: 60px;
 
-    background: red;
+    background: rgb(40, 40, 40);
+
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    align-items: center;
 }
 
 /*id*/
+#name
+{
+    justify-self: left;
+    margin-left: 10%;
+
+    font-size: min(15px, 2vw);
+}
+
+#nav-bar
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 #wrapper
 {
     width: 85%;
@@ -36,4 +55,14 @@ header
     margin-top: 60px;
 
     background: blue;
+}
+
+/*class*/
+.nav-link
+{
+    text-decoration: none;
+    color: white;
+    font-size: min(20px, 3vw);
+
+    white-space: nowrap;
 }
