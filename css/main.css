@@ -20,13 +20,14 @@ header
     top: 0px;
     left: 0px;
     right: 0px;
+    padding-top: 30px;
+    padding-bottom: 20px;
 
-    height: 40px;
+    
 
-    background: rgb(40, 40, 40);
+    background: rgb(20, 20, 20);
 
-    display: grid;
-    align-items: center;
+    
 }
 
 footer
@@ -36,7 +37,7 @@ footer
 
 
 /*id*/
-#nav-bar
+#navbar
 {
     display: flex;
     flex-direction: row;
@@ -102,8 +103,16 @@ footer
     text-decoration: none;
     color: white;
     font-size: min(15px, 3vw);
+    padding: 7px 10px 7px 10px;
+    border-radius: 10px;
 
     white-space: nowrap;
+}
+
+.nav-link:hover
+{
+    color: #000000;
+    background: #ffffff;
 }
 
 .section
