@@ -14,44 +14,69 @@ body
     color: white;
 }
 
-header
-{
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    padding-top: 30px;
-    padding-bottom: 20px;
-
-    
-
-    background: rgb(20, 20, 20);
-
-    
-}
-
 footer
 {
-	padding: 50px 0px 50px 0px;
+	padding: 20px 0px 20px 0px;
 }
 
 
 /*id*/
-#navbar
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
 #wrapper
 {
-    width: 85%;
+    width: 90%;
 
-    margin: 60px auto 0px auto;
+    margin: 0px auto 0px auto;
 
     background: blue;
     border: 5px solid white;
+}
+
+#introduction
+{
+    background: green;
+
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 0.5fr;
+    grid-template-rows: 0.5fr 2fr 1fr 0.5fr;
+}
+
+#intro-text
+{
+    grid-row: 2;
+    grid-column: 2;
+}
+
+#intro-img
+{
+    background: white;
+    grid-row: 2/4;
+    grid-column: 3;
+    border-radius: 8px;
+    background-image: url(https://store-images.s-microsoft.com/image/apps.55563.14303655336501012.2beb08d9-395e-453b-b5e3-0d4ac24d9d15.f9a0e430-b546-45f8-85f1-1d2b90bb84d5?q=90&w=480&h=270);
+    background-size: cover;
+  background-position: center;
+}
+
+#more-info
+{
+	grid-row: 3;
+	grid-column: 2;
+	display: flex;
+	flex-direction: column;
+}
+
+#projects
+{
+	display: grid;
+	grid-template-columns: 100%;	
+	justify-items: center;
+	align-items: center;
+	justify-content: center;
+}
+
+#project-1, #project-2
+{
+	display: flex;
 }
 
 #about
@@ -71,20 +96,6 @@ footer
 	grid-column: 1;
 }
 
-#projects
-{
-	display: grid;
-	grid-template-columns: 100%;	
-	justify-items: center;
-	align-items: center;
-	justify-content: center;
-}
-
-#project-1, #project-2
-{
-	display: flex;
-}
-
 #contacts
 {
 	display: flex;
@@ -98,23 +109,6 @@ footer
 	height: 100vh;
 }
 
-.nav-link
-{
-    text-decoration: none;
-    color: white;
-    font-size: min(15px, 3vw);
-    padding: 7px 10px 7px 10px;
-    border-radius: 10px;
-
-    white-space: nowrap;
-}
-
-.nav-link:hover
-{
-    color: #000000;
-    background: #ffffff;
-}
-
 .section
 {
 	height: 100vh;
@@ -125,4 +119,13 @@ footer
 	justify-self: center;
 	align-self: center;
 	text-align: center;
+}
+.v-center
+{
+	align-self: center;
+}
+
+.h-center
+{
+	justify-self: center;
 }
