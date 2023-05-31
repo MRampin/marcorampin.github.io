@@ -5,22 +5,21 @@
       <title>Marco Rampin portfolio</title>
 
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta name="description" content="Marco Rampin's personal portfolio"
+      <meta name="description" content="Marco Rampin's personal portfolio">
 
-      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.js"> </script>
+      <script  type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 
       <link rel="stylesheet" type="text/css" href="css/main.css">
       <script src="javascript/script.js" type="text/javascript"></script>
 
-      <link rel="apple-touch-icon" sizes="180x180" href="https://raw.githubusercontent.com/marcorampin/marcorampin.github.io/main/images/favicon/chick.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="https://raw.githubusercontent.com/marcorampin/marcorampin.github.io/main/images/favicon/chick.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="https://raw.githubusercontent.com/marcorampin/marcorampin.github.io/main/images/favicon/chick.png">
-
+      <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/icon.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/icon.png">
    </head>
 
-   <body class="maxHeight">
+   <body>
 
-   	<div id="intro-section" class="section maxHeight">
+   	<div id="intro-section" class="section">
 	    	<div id="intro-text" class="v-center">
 	    		<p> Hi, I'm </p>
 			<h1> Marco </h1>
@@ -38,56 +37,88 @@
 	    		</div>
 	    	</div>
 	</div>
-        <div id="project-section" class="section maxHeight">
-		<h1 id="projects-title">PROJECTS</h1>
-		<div id="project-1">
-			<div id="proj1-img"></div>
-			<a id="proj1-title" href="https://marcorampin.github.io/haiku/" target="_blank">Haiku</a>
-		 	<p id="proj1-text">A website where I post my Haikus and photos</p>
-		 </div>         
-		 <div id="project-2">
-			<div id="proj2-img"></div>
-			<a id="proj2-title" href="https://marcorampin.github.io/random-quote-generator/" target="_blank">Random quote</a>
-		 	<p id="proj2-text">Random quote generator website</p>
-		 </div>
-	</div>
-	
-	 <!--
-	 <div id="project-n">
-	 	<div id="projn-img"></div>
-		<a id="projn-title href="https://marcorampin.github.io/proj" target="_blank">Project title</a>
-	 		<p id="projn-text">Lorem ipsum</p>
-	 </div>
-	 -->
+        <div id="project-section" class="section">
+		<h1 id="projects-title">MAIN PROJECTS</h1>
 
-        <div id="about" class="section maxHeight">
-		    <h1 id="about-title" class="center-align">ABOUT ME</h1>
-		    <img id="about-img" class="center-align" src="#">
-	        <p id="about-p" class="center-align">
-	        Hi, I'm Marco Rampin, a MSc Ecology student at University of Vienna.
-	        <br>Currently I'm learning web development (through freeCodeCamp.org) to broaden my skills and expertise in various sectors. I like light and functional websites, while keeping an eye for aesthetics.
-	        <br>
-	        <br>I have many and different hobbies, but the main ones are: Learning new things (languages, skills, etc...), Videogames and Skateboarding.
-	        <br>
-	        <br>This website is my portfolio of personal projects and projects created for the freeCodeCamp curriculum.
-	        </p>
+		<div id="project-haiku" class="project-layout">
+			<div id="haiku-img" class="proj-img-size"></div>
+			<div id="haiku-text">
+				<a id="haiku-title" href="https://marcorampin.github.io/haiku/" target="_blank">Haiku</a>
+		 		<p id="haiku-p">A website where I post my Haikus and photos</p>
+			</div>
+		</div>         
+
+		<div id="project-quotes" class="project-layout">
+			<div id="quotes-img" class="proj-img-size"></div>
+			<div id="quotes-text">
+				<a id="quotes-title" href="https://marcorampin.github.io/random-quote-generator/" target="_blank">Random quote</a>
+		 		<p id="quotes-p">Random quote generator website</p>
+			</div>
+		</div>
+
+		<div id="project-agriweedclim" class="project-layout">
+	 		<div id="agriweedclim-img" class="proj-img-size"></div>
+			<div id="agriweedclim-text">
+				<a id="agriweedclim-title" href="https://marcorampin.github.io/mec4-agriweedclim/" target="_blank">MEC4 AgriWeedClim</a>
+	 			<p id="agriweedclim-p">University research project on the invasive plants in Central Europe agricultural lands</p>
+			</div>
+	 	</div>
+
+		<div id="project-ecologylab" class="project-layout">
+			<div id="ecologylab-img" class="proj-img-size"></div>
+			<div id="ecologylab-text">
+				<a id="ecologylab-title" href="https://marcorampin.github.io/mec7-ecology-ecosystems-lab/" target="_blank">MEC7 Ecology and Ecosystems Lab</a>
+	 			<p id="ecologylab-p">University research project on Leguminose response to droughts</p>
+			</div>
+	 	</div>
+
+		<div id="project-bachelor" class="project-layout">
+	 		<div id="bachelor-img" class="proj-img-size"></div>
+			<div id="bachelor-text">
+				<a id="bachelor-title" href="https://marcorampin.github.io/bachelor-thesis" target="_blank">Bachelor's thesis</a>
+	 			<p id="bachelor-p"> Bachelor's thesis about the Vaccinius myrtillus response to climate change</p>
+			</div>
+	 	</div>
+
+	 	<!--
+	 	<div id="project-n" class="project-layout">
+	 		<div id="projn-img" class="proj-img-size"></div>
+			<a id="projn-title" href="https://marcorampin.github.io/proj" target="_blank">Project title</a>
+	 			<p id="projn-text">Lorem ipsum</p>
+	 	</div>
+	 	-->
+	 </div>
+
+        <div id="about" class="section">
+		    <h1 id="about-title">ABOUT ME</h1>
+		    <div id="about-img"></div>
+	        <div id="about-text">
+			<p id="about-p">
+	        	Hi, I'm Marco Rampin, a MSc Ecology student at University of Vienna.
+	        	<br>Currently I'm learning web development (through freeCodeCamp.org) to broaden my skills and expertise in various sectors. I like light and functional websites, while keeping an eye for aesthetics.
+	        	<br>
+	        	<br>I have many and different hobbies, but the main ones are: Learning new things (languages, skills, etc...), Videogames and Skateboarding.
+	        	<br>
+	        	<br>This website is my portfolio of personal projects and projects created for the freeCodeCamp curriculum.
+	        	</p>
+			<div id="cv-download">Download CV</div>
+		</div>
          </div>
 
-         
-
-		 
-
-        <div id="contacts">
-		    <a id="email-link" href="mailto:rampin.marco.17@gmail.com" title="E-mail"><img id="email-logo" src="#"></a>
-		    <a id="linkedin-link" href="https://www.linkedin.com/in/marco-rampin/" title="LinkedIn"><img id="linkedin-logo" src="#"></a>
-		    <a id="github-link" href="https://github.com/marcorampin" title="GitHub"><img id="github-logo" src="#"></a>
-		    <a id="fcc-link" href="https://www.freecodecamp.org/Marco_Rampin" title="freeCodeCamp"><img id="fcc-logo" src="#"></a>
-		    <a id="instagram-link" href="https://www.instagram.com/marco_rampin/" title="Instagram"><img id="instagram-logo" src="#"></a>
+        <div id="contacts" class="section">
+		<h1 id="contacts-title">CONTACT ME</h1>
+		<div id="contacts-links">
+			<a id="email-link" href="mailto:rampin.marco.17@gmail.com" target="_blank" title="E-mail"><img id="email-logo" class="contact-logo" src="./images/contacts/email_logo.png"></a>
+		 	<a id="linkedin-link" href="https://www.linkedin.com/in/marco-rampin/" target="_blank" title="LinkedIn"><img id="linkedin-logo" class="contact-logo" src="./images/contacts/linkedin_logo.png"></a>
+		 	<a id="github-link" href="https://github.com/marcorampin" target="_blank" title="GitHub"><img id="github-logo" class="contact-logo" src="./images/contacts/github_logo.jpg"></a>
+		 	<a id="fcc-link" href="https://www.freecodecamp.org/Marco_Rampin" target="_blank" title="freeCodeCamp"><img id="fcc-logo" class="contact-logo" src="./images/contacts/fcc_logo.jpg"></a>
+		 	<a id="instagram-link" class="contact-logo" href="https://www.instagram.com/marco_rampin/" target="_blank" title="Instagram"><img id="instagram-logo" class="contact-logo" src="./images/contacts/instagram_logo.jpg"></a>
+		</div>
    	</div>
 
    </body>
 
    <footer id="footer" class="center-align">
-	   website made by <a src="https://www.linkedin.com/in/marco-rampin/">Marco Rampin</a>
+	   website made by <a href="https://www.linkedin.com/in/marco-rampin/" target="_blank">Marco Rampin</a>
    </footer>
 </html>

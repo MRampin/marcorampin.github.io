@@ -1,12 +1,9 @@
 $(document).ready(function() {
-  	const introLeft = document.querySelector('#');
-  	const introRight = document.querySelector('#');
 
     const resizeHeight = () => {
-		$('.maxHeight').css('height', window.innerHeight+'px');
-		$('body').get(0).style.setProperty('--background','#f3f');
+		$('html').css('--maxHeight', window.innerHeight+'px');
 	}
-
+    
     const loadFunctions = () => {
 		resizeHeight();
 	}
