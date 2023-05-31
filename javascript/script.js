@@ -4,6 +4,7 @@ $(document).ready(function() {
 
     const resizeHeight = () => {
 		$('.maxHeight').css('height', window.innerHeight+'px');
+		$('body').get(0).style.setProperty('--background','#f3f');
 	}
 
     const loadFunctions = () => {
