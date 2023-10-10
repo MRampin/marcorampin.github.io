@@ -71,7 +71,7 @@ footer
 {
 	background: orange;
 	display: grid;
-	grid-template-columns: repeat(4, 25%);	
+	grid-template-columns: repeat(4, 1fr);	
 	grid-template-rows: 100px repeat(2, 1fr);
 	text-align: center;
 }
@@ -81,31 +81,6 @@ footer
 	grid-row: 1;
 	grid-column: 1/-1;
 	border: 3px solid black;
-}
-
-#haiku-img
-{
-	background-image: url(../images/projects/haiku.png);
-}
-
-#quotes-img
-{
-	background-image: url(../images/projects/quotes.png);	
-}
-
-#agriweedclim-img
-{
-	background-image: url(../images/projects/agriweedclim.png);
-}
-
-#ecologylab-img
-{
-	background-image: url(../images/projects/ecologylab.png);
-}
-
-#bachelor-img
-{
-	background-image: url(../images/projects/bachelor.png);
 }
 
 #about
@@ -193,19 +168,14 @@ footer
 .project-layout
 {
 	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 1fr;
-	grid-row-gap: 5%;
+	grid-column-template: repeat(4, 1fr);
+	justify-items: center;
+	align-items: start;
 }
 
-.proj-img-size
+.project-layout img
 {
-	height: 95%;
-	width: 95%;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	border-radius: 8px;
+	width: 20%;
 }
 
 .contact-logo
