@@ -24,6 +24,18 @@ footer
 	padding: 20px 0px 20px 0px;
 }
 
+a
+{
+	text-decoration: inherit;
+	color: inherit;
+}
+
+a:visited
+{
+	text-decoration: inherit;
+	color: inherit;
+}
+
 
 /*id*/
 #intro-section
@@ -69,18 +81,23 @@ footer
 
 #project-section
 {
-	background: orange;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);	
 	grid-template-rows: 100px repeat(2, 1fr);
+	grid-row-gap: 0.5em;
 	text-align: center;
+}
+
+#project-section img
+{
+	width: 20vw;
+	border-radius: 8px;
 }
 
 #projects-title
 {
 	grid-row: 1;
 	grid-column: 1/-1;
-	border: 3px solid black;
 }
 
 #about
@@ -146,36 +163,6 @@ footer
 .section
 {
 	width: 90%;
-	height: 90%;
-}
-
-.center-align
-{
-	justify-self: center;
-	align-self: center;
-	text-align: center;
-}
-.v-center
-{
-	align-self: center;
-}
-
-.h-center
-{
-	justify-self: center;
-}
-
-.project-layout
-{
-	display: grid;
-	grid-column-template: repeat(4, 1fr);
-	justify-items: center;
-	align-items: start;
-}
-
-.project-layout img
-{
-	width: 20%;
 }
 
 .contact-logo
