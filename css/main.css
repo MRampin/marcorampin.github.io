@@ -40,8 +40,6 @@ a:visited
 /*id*/
 #intro-section
 {
-	background: green;
-
     	display: grid;
     	grid-template-columns: 2fr 1fr;
     	grid-template-rows: 2fr 1fr;
@@ -83,14 +81,14 @@ a:visited
 {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);	
-	grid-template-rows: 100px repeat(2, 1fr);
-	grid-row-gap: 0.5em;
+	grid-template-rows: 100px;
+	grid-row-gap: 1em;
 	text-align: center;
 }
 
 #project-section img
 {
-	width: 20vw;
+	width: min(20vw, 300px);
 	border-radius: 8px;
 }
 
@@ -102,7 +100,6 @@ a:visited
 
 #about
 {
-	background: blue;
 	display: grid;
 	grid-template-columns: 1fr 2fr;
 	grid-template-rows: 0.25fr 1fr;
@@ -141,7 +138,6 @@ a:visited
 
 #contacts
 {
-	background: violet;
 	display: grid;
 	grid-template-rows: 0.5fr 2fr;
 	align-items: center;
@@ -167,8 +163,8 @@ a:visited
 
 .contact-logo
 {
-	width: 50px;
-	height: 50px;
+	width: min(15vw, 75px);
+	height: auto;
 	border-radius: 8px;
 }
 
