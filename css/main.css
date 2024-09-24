@@ -56,14 +56,14 @@ a:visited
 #intro-img
 {
     margin: 7%;
-    height: 70%;
-    width: 70%;
+    height: 100%;
+    width: 100%;
     align-self: center;
     justify-self: center;
     grid-row: 1/-1;
     grid-column: 2;
     border-radius: 8px;
-    background-image: url(https://store-images.s-microsoft.com/image/apps.55563.14303655336501012.2beb08d9-395e-453b-b5e3-0d4ac24d9d15.f9a0e430-b546-45f8-85f1-1d2b90bb84d5?q=90&w=480&h=270);
+    background-image: url("../images/marco.png");
     background-size: cover;
     background-position: center;
 }
@@ -92,9 +92,14 @@ a:visited
 	border-radius: 8px;
 }
 
-#projects-title
+#uni-projects
 {
 	grid-row: 1;
+	grid-column: 1/-1;
+}
+#personal-projects
+{
+	grid-row: 4;
 	grid-column: 1/-1;
 }
 
@@ -118,8 +123,11 @@ a:visited
 	grid-column: 1;
 	width: 70%;
 	height: 70%;
-	background: red;
+	background-image: url("../images/marco.png");
+	background-size: cover;
+	background-position: center;
 	justify-self: center;
+	border-radius: 8px;
 }
 
 #about-text
@@ -163,7 +171,7 @@ a:visited
 
 .contact-logo
 {
-	width: min(15vw, 75px);
+	width: min(15vw, 50px);
 	height: auto;
 	border-radius: 8px;
 }
